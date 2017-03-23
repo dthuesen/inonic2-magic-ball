@@ -24,13 +24,13 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [ 
-      { patterns: './src/test.ts', watched: false }
+      { pattern: './src/test.ts', watched: false }
     ],
 
 
     // list of files to exclude
-    exclude: [
-    ],
+    // exclude: [
+    // ],
 
 
     // preprocess matching files before serving them to the browser
@@ -54,7 +54,7 @@ module.exports = function(config) {
 
 
     angularCli: {
-      config: './angular-cli-json',
+      config: './angular-cli.json',
       environment: 'dev'
     },
 

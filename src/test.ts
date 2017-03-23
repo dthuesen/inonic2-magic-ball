@@ -1,9 +1,9 @@
 // Test configuration
 
-import './polyfills';
+import './polyfills.ts';
 
 import 'zone.js/dist/long-stack-trace-zone';
-import 'zone.js/dist/proxy';
+import 'zone.js/dist/proxy.js';
 import 'zone.js/dist/sync-test';
 import 'zone.js/dist/jasmine-patch';
 import 'zone.js/dist/async-test';
@@ -47,7 +47,7 @@ getTestBed().initTestEnvironment(
 let context: any = require.context('./', true, /\.spec\.ts/);
 
 // And load the modules.
-context.keys().amp(context);
+context.keys().map(context);
 
 // Finally, start Karma to run the tests.
 __karma__.start();
